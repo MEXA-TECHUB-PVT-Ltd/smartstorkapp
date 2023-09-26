@@ -25,6 +25,7 @@ import { heightPercentageToDP, widthPercentageToDP, widthPercentageToDP as wp } 
 
 
 
+import Go_back from '../../../assets/Custom/Go_back';
 import Back from '../../../assets/svg/back.svg'
 
 
@@ -50,15 +51,9 @@ const App = ({ navigation }) => {
 
     return (
         <ScrollView style={styles.bg} contentContainerStyle={{ flexGrow: 1 }}>
-            <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} translucent={true} />
+            {/* <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} translucent={true} /> */}
             <View style={styles.mainv}>
-                <ImageBackground source={appImages.bg} style={{ width: '100%', height: 140 }} resizeMode='stretch' >
-                    <TouchableOpacity 
-                    activeOpacity={0.7}
-                    onPress={()=>{navigation.goBack()}}>
-                        <Back width={20} height={20} style={{ marginTop: '14%', marginLeft: '5%' }} />
-                    </TouchableOpacity>
-                </ImageBackground>
+              <Go_back/>
                 <Text style={styles.txt}>Reset Password</Text>
                 <Text style={styles.txt1}>Create a strong password</Text>
                 <View style={styles.v1}>

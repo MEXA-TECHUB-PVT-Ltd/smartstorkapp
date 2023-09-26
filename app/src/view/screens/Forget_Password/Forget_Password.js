@@ -25,10 +25,11 @@ import { heightPercentageToDP, widthPercentageToDP, widthPercentageToDP as wp } 
 
 
 
-import Back from '../../../assets/svg/back.svg'
 
 
 
+
+import Go_back from '../../../assets/Custom/Go_back';
 
 import CustomButton from '../../../assets/Custom/Custom_Button';
 import { useIsFocused } from '@react-navigation/native';
@@ -50,15 +51,9 @@ const App = ({ navigation }) => {
 
     return (
         <ScrollView style={styles.bg} contentContainerStyle={{ flexGrow: 1 }}>
-            <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} translucent={true} />
+            {/* <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} translucent={true} /> */}
             <View style={styles.mainv}>
-                <ImageBackground source={appImages.bg} style={{ width: '100%', height: 140 }} resizeMode='stretch' >
-                <TouchableOpacity 
-                    activeOpacity={0.7}
-                    onPress={()=>{navigation.goBack()}}>
-                        <Back width={20} height={20} style={{ marginTop: '14%', marginLeft: '5%' }} />
-                    </TouchableOpacity>
-                </ImageBackground>
+              <Go_back/>
                 <Text style={styles.txt}>Forgot Password</Text>
                 <Text style={styles.txt1}>Enter your email address below for the verification code</Text>
                 <View style={styles.v1}>
