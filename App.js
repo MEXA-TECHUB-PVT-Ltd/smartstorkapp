@@ -11,6 +11,13 @@ import Forget_Password from './app/src/view/screens/Forget_Password/Forget_Passw
 import Verification from './app/src/view/screens/Verification/Verification';
 import Reset_password from './app/src/view/screens/Reset_password/Reset_password';
 import Tell_us_about_your_self from './app/src/view/screens/Tell_us_about_your_self/Tell_us_about_your_self';
+import Privacy_first from './app/src/view/screens/Privacy_first/Privacy_first';
+import Thank_you from './app/src/view/screens/Thank_you/Thank_you';
+import Home from './app/src/view/screens/Home/Home';
+import Notifications from './app/src/view/screens/Notifications/Notifications';
+import Results from './app/src/view/screens/Results/Results';
+import Your_log from './app/src/view/screens/Your_log/Your_log';
+import Settings from './app/src/view/screens/Settings/Settings';
 
 
 
@@ -77,7 +84,44 @@ const App = () => {
           name="Tell_us_about_your_self"
           component={Tell_us_about_your_self}
           options={{ headerShown: false }}
+        /> 
+         <Stack.Screen
+          name="Privacy_first"
+          component={Privacy_first}
+          options={{ headerShown: false }}
         />
+         <Stack.Screen
+          name="Thank_you"
+          component={Thank_you}
+          options={{ headerShown: false }}
+        /> 
+       
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Notifications"
+          component={Notifications}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Results"
+          component={Results}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Your_log"
+          component={Your_log}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Settings"
+          component={Settings}
+          options={{ headerShown: false }}
+        />
+        
 
       </Stack.Navigator>
     </NavigationContainer>

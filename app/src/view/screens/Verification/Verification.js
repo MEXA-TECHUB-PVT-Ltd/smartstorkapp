@@ -17,6 +17,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+import Go_back from '../../../assets/Custom/Go_back';
 import { appImages } from '../../../assets/utilities/index'
 import {
     Button, Divider,
@@ -59,15 +60,9 @@ const App = ({ navigation }) => {
 
     return (
         <ScrollView style={styles.bg} contentContainerStyle={{ flexGrow: 1 }}>
-            <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} translucent={true} />
+            {/* <StatusBar barStyle={'dark-content'} backgroundColor={'transparent'} translucent={true} /> */}
             <View style={styles.mainv}>
-                <ImageBackground source={appImages.bg} style={{ width: '100%', height: 140 }} resizeMode='stretch' >
-                <TouchableOpacity 
-                    activeOpacity={0.7}
-                    onPress={()=>{navigation.goBack()}}>
-                        <Back width={20} height={20} style={{ marginTop: '14%', marginLeft: '5%' }} />
-                    </TouchableOpacity>
-                </ImageBackground>
+            <Go_back/>
                 <Text style={styles.txt}>Verification</Text>
                 <Text style={styles.txt1}>Enter the code that you received on your email address</Text>
                 <View style={styles.root}>

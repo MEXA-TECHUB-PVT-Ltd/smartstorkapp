@@ -19,7 +19,7 @@ import styles from './styles';
 import axios from 'axios';
 LogBox.ignoreAllLogs();
 
-import Blank_check from './../../../assets/svg/blank_check.svg';
+import Blank_check from './../../../assets/svg/Blank_check.svg';
 import Check from './../../../assets/svg/check.svg';
 
 import A1 from './../../../assets/svg/a1.svg';
@@ -869,7 +869,7 @@ const SignIn = () => {
                                                                     backgroundColor: '#B6BEA9'
                                                                 }]}
                                                                     onPress={() => {
-                                                                     navigation.navigate('')
+                                                                     navigation.navigate('Privacy_first')
 
                                                                     }}>
                                                                     <Text style={styles.txt1}>
